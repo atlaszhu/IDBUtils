@@ -1,7 +1,7 @@
 # IDBUtils
 对IndexedDB进行封装
 # 使用方法
-
+复制我的ts文件到本地
 ```ts
 import { IDBUtils } from '../IDBUtils';
 const db = new IDBUtils("myDB", 1);
