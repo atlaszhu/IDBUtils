@@ -118,13 +118,13 @@ export class IDBUtils {
   }
 
   closeDB() {
-    if (!this.db) return console.log("db不存在");
-    this.db.close();
+    setTimeout(() => {
+      this?.db?.close();
+    }, 100);
   }
 
   deleteObjectStore(storeName: string) {
     this.openDB((event: any) => {
-      console.log("hi");
       event.target.result.deleteObjectStore(storeName);
     });
   }
